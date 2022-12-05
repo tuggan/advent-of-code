@@ -2,7 +2,7 @@ use std::{fs::File, io::BufReader};
 use std::io::prelude::*;
 
 fn main() -> std::io::Result<()> {
-    let file = File::open("../../input/day2.").expect("File not found");
+    let file = File::open("../../input/day2").expect("File not found");
     let buf_reader = BufReader::new(file);
 
     let mut sum: i64 = 0;
