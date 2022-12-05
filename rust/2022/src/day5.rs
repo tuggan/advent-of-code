@@ -44,6 +44,7 @@ fn part1(path: &str) -> std::io::Result<()> {
             Some(Ok(t)) => t,
             _ => break,
         };
+        if s.len() == 0 {continue};
         
         let moves: Vec<&str> = s.split(' ').collect();
         let from = moves[3].parse::<usize>().unwrap()-1;
@@ -104,6 +105,7 @@ fn part2(path: &str) -> std::io::Result<()> {
             Some(Ok(t)) => t,
             _ => break,
         };
+        if s.len() == 0 {continue;};
         
         let moves: Vec<&str> = s.split(' ').collect();
         let from = moves[3].parse::<usize>().unwrap()-1;
